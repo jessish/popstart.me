@@ -44,17 +44,6 @@ ActiveRecord::Schema.define(:version => 20130413042436) do
   add_index "relationships", ["follower_id", "followed_id"], :name => "index_relationships_on_follower_id_and_followed_id", :unique => true
   add_index "relationships", ["follower_id"], :name => "index_relationships_on_follower_id"
 
-  create_table "signups", :force => true do |t|
-    t.string   "name"
-    t.string   "email"
-    t.string   "phone"
-    t.string   "comment"
-    t.string   "vendortype"
-    t.string   "location"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
   create_table "users", :force => true do |t|
     t.string   "name"
     t.string   "email"

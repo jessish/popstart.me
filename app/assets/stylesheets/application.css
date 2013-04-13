@@ -22,8 +22,24 @@
 .rego-r1c4 {background-image:url('registration4.jpg');}
 .rego-r1c5 {background-image:url('registration5.jpg');}
 .rego-r1c6 {background-image:url('registration6.jpg');}
-.rego-r2c1 {background-color:#eaeaea; text-align:center;}
-.rego-r2c2 {background-color:#000;}
+
+.rego-r2c1 {
+	background-color:#eaeaea; text-align:center; 
+	font-family: ''; 
+	text-transform: uppercase;
+}
+
+
+.rego-r2c2 {
+	background-color:#000; 
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+
+
+
 
 
 @font-face {
