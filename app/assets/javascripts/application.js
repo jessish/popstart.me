@@ -18,8 +18,7 @@
 $(document).ready(function(){
 	window.onresize = (function(e) {
 	  var width = $(window).width()/6;
-	  $('.registrationblock .span2').css('height', width);
-	  $('.registrationblock .span2').css('width', width);
-
+	  //$('.registrationblock .span2').css('height', width);
+	  //$('.registrationblock .span2').css('width', width);
 	})();
 });
