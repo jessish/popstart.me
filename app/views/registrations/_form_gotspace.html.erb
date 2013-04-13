@@ -2,7 +2,7 @@
 <div id="gotspace" class="modal hide fade">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-    <h3>Got Space man!</h3>
+    <h3 style="color: #009dff">Register My Venue</h3>
   </div>
  
   <div class="modal-body">
@@ -19,30 +19,48 @@
       </div>
     <% end %>
 
-    <div class="field">
-      <%= f.label :name %><br />
-      <%= f.text_field :name %>
+    <div class="input-prepend">
+      <div class="add-on"><i class="icon-user"></i>
     </div>
-    <div class="field">
-      <%= f.label :email %><br />
-      <%= f.text_field :email %>
+      <%= f.text_field :name, :placeholder => "Your name" %>
     </div>
-    <div class="field">
-      <%= f.label :phone %><br />
-      <%= f.text_field :phone %>
+
+    <br/>
+
+    <div class="input-prepend">
+      <div class="add-on"><i class="icon-envelope"></i>
     </div>
-    <div class="field">
-      <%= f.label :comment %><br />
-      <%= f.text_field :comment %>
+      <%= f.text_field :email, :placeholder => "Email" %>
     </div>
+
+    <br />
+
+    <div class="input-prepend">
+      <div class="add-on"><i class="icon-phone"></i>
+    </div>
+      <%= f.text_field :phone, :placeholder => 'Phone' %>
+    </div>
+
+
     <div class="field">
-      
       <%= f.hidden_field :vendortype, :value=> 'venue' %>
     </div>
-    <div class="field">
-      <%= f.label :location %><br />
-      <%= f.text_field :location %>
+
+
+    <br/>
+
+    <div class="input-prepend">
+      <div class="add-on"><i class="icon-map-marker"></i>
     </div>
+      <%= f.text_field :location, :placeholder => 'Venue Name' %>
+    </div>
+
+    <br/>
+
+    <div>
+      <%= f.text_area :comment, :placeholder => 'Describe your venue', :rows => 4 %>
+    </div>
+
     <div class="actions">
       
     </div>
@@ -50,7 +68,7 @@
 
   </div>
   <div class="modal-footer">
-    <a href="#" class="btn">Close</a>
+    <a href="#" class="btn" data-dismiss="modal">Close</a>
     <%= f.submit 'Submit', :class=> "btn btn-primary" %>
 
   </div>
