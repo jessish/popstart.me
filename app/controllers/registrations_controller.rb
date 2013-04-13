@@ -45,7 +45,7 @@ class RegistrationsController < ApplicationController
 
     respond_to do |format|
       if @registration.save
-        format.html { redirect_to @registration, notice: 'Registration was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Thanks for signing up.' }
         format.json { render json: @registration, status: :created, location: @registration }
       else
         format.html { render action: "new" }

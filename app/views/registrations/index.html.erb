@@ -20,54 +20,12 @@
   <div class="span3 rego-r1c4" style="margin: 0; width: 25%"><%= image_tag 'Image12.jpg' %></div>
 </div>
 
-<div id="needspace" class="modal hide fade">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-    <h3>Need Space man!</h3>
-  </div>
-  <div class="modal-body">
-    <p>One fine body…</p>
-  </div>
-  <div class="modal-footer">
-    <a href="#" class="btn">Close</a>
-    <a href="#" class="btn btn-primary">Save changes</a>
-  </div>
-</div>
+
 
 <%= render 'form_gotspace' %>
+<%= render 'form_needspace' %>
 
 
 
-<h1>Listing registrations</h1>
-
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Email</th>
-    <th>Phone</th>
-    <th>Comment</th>
-    <th>Vendortype</th>
-    <th>Location</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @registrations.each do |registration| %>
-  <tr>
-    <td><%= registration.name %></td>
-    <td><%= registration.email %></td>
-    <td><%= registration.phone %></td>
-    <td><%= registration.comment %></td>
-    <td><%= registration.vendortype %></td>
-    <td><%= registration.location %></td>
-    <td><%= link_to 'Show', registration %></td>
-    <td><%= link_to 'Edit', edit_registration_path(registration) %></td>
-    <td><%= link_to 'Destroy', registration, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
 
 <br />
-
-<%= link_to 'New Registration', new_registration_path %>
