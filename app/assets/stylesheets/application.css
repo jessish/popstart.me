@@ -8,6 +8,21 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
- *= require_self
  *= require_tree .
-*/
+ *= require_self
+ */
+
+.container-fluid {padding:0 !important; margin:0;}
+.registrationblock {padding:0 !important; margin:0 !important;}
+.registrationblock .span2 {padding:0 !important; margin:0 !important;}
+
+.rego-r1c1 {background-image:url('registration1.jpg');}
+.rego-r1c2 {background-image:url('registration2.jpg');}
+.rego-r1c3 {background-image:url('registration3.jpg');}
+.rego-r1c4 {background-image:url('registration4.jpg');}
+.rego-r1c5 {background-image:url('registration5.jpg');}
+.rego-r1c6 {background-image:url('registration6.jpg');}
+.rego-r2c1 {background-color:#eaeaea; text-align:center;}
+.rego-r2c2 {background-color:#000;}
+
+

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @registration.name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @registration.email %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @registration.phone %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%= @registration.comment %>
+</p>
+
+<p>
+  <b>Vendortype:</b>
+  <%= @registration.vendortype %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @registration.location %>
+</p>
+
+
+<%= link_to 'Edit', edit_registration_path(@registration) %> |
+<%= link_to 'Back', registrations_path %>

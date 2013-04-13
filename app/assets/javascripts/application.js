@@ -14,3 +14,12 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require_tree .
+
+$(document).ready(function(){
+	window.onresize = (function(e) {
+	  var width = $(window).width()/6;
+	  $('.registrationblock .span2').css('height', width);
+	  $('.registrationblock .span2').css('width', width);
+
+	})();
+});

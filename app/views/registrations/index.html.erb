@@ -1,0 +1,54 @@
+<div class="row-fluid registrationblock">
+  <div class="span2 rego-r1c1">&nbsp;</div>
+  <div class="span2 rego-r1c2">&nbsp;</div>
+  <div class="span2 rego-r1c3">&nbsp;</div>
+  <div class="span2 rego-r1c4">&nbsp;</div>
+  <div class="span2 rego-r1c5">&nbsp;</div>
+  <div class="span2 rego-r1c6">&nbsp;</div>
+
+</div>
+<div class="row-fluid registrationblock">
+  <div class="span6 rego-r2c1">I need a space for my event in Melbourne</div>
+  <div class="span6 rego-r2c2">I want to rent my space in Melbourne</div>
+
+</div>
+
+
+
+
+
+
+
+<h1>Listing registrations</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Comment</th>
+    <th>Vendortype</th>
+    <th>Location</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @registrations.each do |registration| %>
+  <tr>
+    <td><%= registration.name %></td>
+    <td><%= registration.email %></td>
+    <td><%= registration.phone %></td>
+    <td><%= registration.comment %></td>
+    <td><%= registration.vendortype %></td>
+    <td><%= registration.location %></td>
+    <td><%= link_to 'Show', registration %></td>
+    <td><%= link_to 'Edit', edit_registration_path(registration) %></td>
+    <td><%= link_to 'Destroy', registration, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Registration', new_registration_path %>
