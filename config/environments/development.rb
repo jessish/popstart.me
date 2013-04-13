@@ -34,4 +34,14 @@ SampleApp::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  config.paperclip_defaults = {
+    :storage => :s3,
+    :s3_credentials => {
+      :bucket => 'popstartme-uploads',
+      :access_key_id => 'AKIAJVGKGHBASKVAIA5Q',
+      :secret_access_key => '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'
+    }
+  }
+
 end
