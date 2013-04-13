@@ -26,3 +26,14 @@
 .rego-r2c2 {background-color:#000;}
 
 
+@font-face {
+    font-family: 'anja_eliane_accentnornal';
+    src: url('anja_eliane_accent002-webfont.eot');
+    src: url('anja_eliane_accent002-webfont.eot?#iefix') format('embedded-opentype'),
+         url('anja_eliane_accent002-webfont.woff') format('woff'),
+         url('anja_eliane_accent002-webfont.ttf') format('truetype'),
+         url('anja_eliane_accent002-webfont.svg#anja_eliane_accentnornal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
