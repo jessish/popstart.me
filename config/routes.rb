@@ -1,5 +1,9 @@
 SampleApp::Application.routes.draw do
-  resources :registrations
+  resources :registrations do
+    collection do
+      get :get_registration_counts
+    end
+  end
 
 
   resources :users do

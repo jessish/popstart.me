@@ -61,7 +61,7 @@ class RegistrationsController < ApplicationController
 
     respond_to do |format|
       if @registration.update_attributes(params[:registration])
-        format.html { redirect_to @registration, notice: 'Registration was successfully updated.' }
+        format    .html { redirect_to @registration, notice: 'Registration was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
@@ -81,4 +81,13 @@ class RegistrationsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def get_registration_counts
+    no_venues = Registration.where("vendortype = ?","venue").count
+    no_customers = Registration.where("vendortype = ?","customer").count
+
+    json_data = {'customers' => no_customers.to_s, 'venues' => no_venues.to_s }.to_json
+    render :json => json_data
+  end
+
 end

@@ -42,6 +42,32 @@
 <%= render 'form_needspace' %>
 
 
+<!-- *** javascript section **** -->
+<script type="text/javascript">
+    function getRegistrationCount(refreshTimer) {
+
+      clearInterval(refreshTimer);
+
+      $.ajax({
+            url: "<%= get_registration_counts_registrations_path %>",
+            data: { },
+            success: function(data) {  
+              if(data) {
+                $("#left-cta .number").html(data.customers.toString());
+                $("#right-cta .number").html(data.venues.toString());
+              }
+
+              refreshTimer = setInterval(function() {
+                getRegistrationCount(refreshTimer);
+              }, 5000);      
+            }
+      });
+    }
+  $(document).ready(function() {
+    var refreshTimer;
+    getRegistrationCount(refreshTimer);
+  });
+</script>
 
 
 <br />
