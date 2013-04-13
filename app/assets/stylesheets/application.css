@@ -82,3 +82,7 @@
 .nav li {padding:10px;}
 
 
+
+#gotspace .input-prepend, #needspace .input-prepend {
+	margin: 0 0 15px 0;
+}
