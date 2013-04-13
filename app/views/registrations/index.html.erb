@@ -1,21 +1,43 @@
 <div class="row-fluid registrationblock">
-  <div class="span2 rego-r1c1">&nbsp;</div>
-  <div class="span2 rego-r1c2">&nbsp;</div>
-  <div class="span2 rego-r1c3">&nbsp;</div>
-  <div class="span2 rego-r1c4">&nbsp;</div>
-  <div class="span2 rego-r1c5">&nbsp;</div>
-  <div class="span2 rego-r1c6">&nbsp;</div>
-
+  <div class="span3 rego-r1c1" style="margin: 0; width: 25%; position: relative">
+    <div style="position: absolute; left: 10%; right: 10%; width: 15%; height: 20%; background-color: #009dff">1458</div>
+    <%= image_tag 'Image1.jpg' %>
+  </div>
+  <div class="span3 rego-r1c2" style="margin: 0; width: 25%"><%= image_tag 'Image2.jpg' %></div>
+  <div class="span3 rego-r1c3" style="margin: 0; width: 25%"><%= image_tag 'Image3.jpg' %></div>
+  <div class="span3 rego-r1c4" style="margin: 0; width: 25%"><%= image_tag 'Image4.jpg' %></div>
 </div>
+
+
 <div class="row-fluid registrationblock">
-  <div class="span6 rego-r2c1">I need a space for my event in Melbourne</div>
-  <div class="span6 rego-r2c2">I want to rent my space in Melbourne</div>
+  <div id="left-cta" class="span6 rego-r2c1" style="margin: 0; width: 50%; height: 240px;" data-toggle="modal" data-target="#needspace"><div class="regotext">I need a space for my event in Melbourne</div></div>
+  <div id="right-cta" class="span6 rego-r2c2" style="margin: 0; width: 50%; height: 240px;" data-toggle="modal" data-target="#gotspace"><div class="regotext">I want to rent my space in Melbourne</div></div>
 
 </div>
 
 
+<div class="row-fluid registrationblock">
+  <div class="span3 rego-r1c1" style="margin: 0; width: 25%"><%= image_tag 'Image3.jpg' %></div>
+  <div class="span3 rego-r1c2" style="margin: 0; width: 25%"><%= image_tag 'Image4.jpg' %></div>
+  <div class="span3 rego-r1c3" style="margin: 0; width: 25%"><%= image_tag 'Image6.jpg' %></div>
+  <div class="span3 rego-r1c4" style="margin: 0; width: 25%"><%= image_tag 'registration1.jpg' %></div>
+</div>
 
+<div id="needspace" class="modal hide fade">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>Need Space man!</h3>
+  </div>
+  <div class="modal-body">
+    <p>One fine body…</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn">Close</a>
+    <a href="#" class="btn btn-primary">Save changes</a>
+  </div>
+</div>
 
+<%= render 'form_gotspace' %>
 
 
 

@@ -1,0 +1,65 @@
+<%= form_for(@registration) do |f| %>
+<div id="gotspace" class="modal hide fade">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>Got Space man!</h3>
+  </div>
+ 
+  <div class="modal-body">
+    
+    <% if @registration.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@registration.errors.count, "error") %> prohibited this registration from being saved:</h2>
+
+        <ul>
+        <% @registration.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.label :name %><br />
+      <%= f.text_field :name %>
+    </div>
+    <div class="field">
+      <%= f.label :email %><br />
+      <%= f.text_field :email %>
+    </div>
+    <div class="field">
+      <%= f.label :phone %><br />
+      <%= f.text_field :phone %>
+    </div>
+    <div class="field">
+      <%= f.label :comment %><br />
+      <%= f.text_field :comment %>
+    </div>
+    <div class="field">
+      
+      <%= f.hidden_field :vendortype, :value=> 'venue' %>
+    </div>
+    <div class="field">
+      <%= f.label :location %><br />
+      <%= f.text_field :location %>
+    </div>
+    <div class="actions">
+      
+    </div>
+  
+
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn">Close</a>
+    <%= f.submit 'Submit', :class=> "btn btn-primary" %>
+
+  </div>
+</div>
+
+<% end %>
+
+
+
+
+
+

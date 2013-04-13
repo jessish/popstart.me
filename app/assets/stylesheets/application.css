@@ -29,18 +29,21 @@
 .registrationblock {padding:0 !important; margin:0 !important;}
 .registrationblock .span2 {padding:0 !important; margin:0 !important;}
 
-.rego-r1c1 {background-image:url('registration1.jpg');}
-.rego-r1c2 {background-image:url('registration2.jpg');}
-.rego-r1c3 {background-image:url('registration3.jpg');}
+.span3 .rego-r1c1 { padding: 0; margin-left: 0 !important; width: 25% }
+.span3 .rego-r1c2 { padding: 0; margin-left: 0 !important; width: 25%}
+.rego-r1c3 { padding: 0; margin-left: 0;}
 .rego-r1c4 {background-image:url('registration4.jpg');}
 .rego-r1c5 {background-image:url('registration5.jpg');}
 .rego-r1c6 {background-image:url('registration6.jpg');}
+.regotext {padding:60px 60px;}
+
 
 .rego-r2c1 {
 	background-color:#eaeaea; text-align:center; 
 	font-family: 'anja_eliane_accentnornal' !important; 
 	text-transform: uppercase;
-	font-size: 1.5em;
+	font-size: 40px;
+	line-height:50px;
 }
 
 
@@ -49,9 +52,24 @@
 	color: #fff;
 	text-transform: uppercase;
 	text-align: center;
-	font-family: 'anja_eliane_accentnornal'; 
+	font-family: 'anja_eliane_accentnornal';
+	font-size: 40px;
+	line-height:50px;
 }
 
 
+#left-cta, #right-cta {
+	cursor: pointer;
+}
 
+#left-cta:hover {
+	opacity: 0.7;
+	background-color: #009dff;
+	color: #eaeaea;
+}
 
+#right-cta:hover {
+	opacity: 0.7;
+	background-color: #009dff;
+	
+}
