@@ -2,7 +2,7 @@ class User < ActiveRecord::Base
   attr_accessible :name, :email, :password, :password_confirmation
   has_secure_password
   has_many :microposts, dependent: :destroy
-  has_many :relationships, foreign_key: "follor_hewer_id", dependent: :destroy
+  has_many :relationships, foreign_key: "follower_id", dependent: :destroy
   has_many :followed_users, through: :relationships, source: :followed
   has_many :reverse_relationships, foreign_key: "followed_id",
                                    class_name:  "Relationship",
@@ -23,7 +23,7 @@ class User < ActiveRecord::Base
 
   # This method associates the attribute ":avatar" with a file attachment
   has_attached_file :avatar, styles: {
-    thumb: '50x50>',
+    thumb: '100x100>',
     square: '200x200#',
     medium: '300x300>'
   }
