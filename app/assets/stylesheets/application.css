@@ -92,6 +92,7 @@
 	float: left;
 	width: 2px;
 	border-left: 1px solid #444;
+	background-color: red;
 }
 
 #left-cta .regotext{
@@ -104,7 +105,24 @@
 #left-cta .counter{
 	text-align: right;
 	width: 15%;
+	float: right;
+	padding: 60px;
+	text-align: center;
+}
+
+
+#right-cta .regotext{
+	text-align: left;
+	width: 50%;
+	float: right;
+
+}
+
+#right-cta .counter{
+	text-align: right;
+	width: 15%;
 	float: left;
 	padding: 60px;
 	text-align: center;
 }
+
