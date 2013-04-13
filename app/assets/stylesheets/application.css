@@ -86,3 +86,25 @@
 #gotspace .input-prepend, #needspace .input-prepend {
 	margin: 0 0 15px 0;
 }
+
+
+#left-cta .separator{
+	float: left;
+	width: 2px;
+	border-left: 1px solid #444;
+}
+
+#left-cta .regotext{
+	text-align: left;
+	width: 50%;
+	float: left;
+
+}
+
+#left-cta .counter{
+	text-align: right;
+	width: 15%;
+	float: left;
+	padding: 60px;
+	text-align: center;
+}
