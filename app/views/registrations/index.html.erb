@@ -1,3 +1,15 @@
+
+<% content_for :view_style_includes do %>
+  <%= stylesheet_link_tag "bootstrap.min" %>
+  <%= stylesheet_link_tag "bootstrap-responsive.min" %>
+  <%= stylesheet_link_tag "registrations" %>
+<% end %>
+
+<% content_for :view_javascript_includes do %>
+  <%= javascript_include_tag "bootstrap.min" %>
+<% end %>
+
+
 <div class="row-fluid registrationblock">
   <div class="span3 rego-r1c1 hidden-phone" style="margin: 0;"><%= image_tag 'Image2.jpg' %></div>
   <div class="span3 rego-r1c2 hidden-phone" style="margin: 0;"><%= image_tag 'Image3.jpg' %></div>

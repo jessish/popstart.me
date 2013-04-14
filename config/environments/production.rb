@@ -74,4 +74,7 @@ SampleApp::Application.configure do
     }
   }
 
+  config.assets.precompile += ["bootstrap.min.css","bootstrap-responsive.min.css","glyphicons-halflings.png","glyphicons-halflings-white.png","bootstrap.min.js"]
+
+
 end
