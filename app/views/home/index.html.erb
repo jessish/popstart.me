@@ -135,7 +135,9 @@
           </a>
           
           <a href="index.html#" class="trait-box photography">
-            <h4>I Want to Rent Out My Space</h4>
+            <h4>I Want to Rent Out My Space<br />
+              <span style="font-size: 16px; line-height: 16px;"><span id="venuecount"></span> Registered Venues</span>
+            </h4>
             <dl>
               <dt>
                 <span class="trait-emblem large photography">
@@ -396,7 +398,7 @@
             success: function(data) {  
               if(data) {
                 $("#vendorcount").html(data.customers.toString());
-               // $("#right-cta .number").html(data.venues.toString());
+                $("#venuecount").html(data.venues.toString());
               }
 
               refreshTimer = setInterval(function() {
