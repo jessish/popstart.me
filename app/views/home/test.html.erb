@@ -1,7 +1,27 @@
 <div style="margin-top: 100px;">
-	<%= link_to 'need space', '#' %>
+	<%= link_to 'need space', '#', :id => "needspace_link" %>
 </div>
 
 <div style="margin-top: 100px;">
-	<%= link_to 'got space', '#' %>
+	<%= link_to 'got space', '#', :id => "gotspace_link" %>
 </div>
+
+<div id="gotspace_form">
+	<%= render 'shared/form_gotspace' %>
+</div>
+
+<div id="needspace_form">
+	<%= render 'shared/form_needspace' %>
+</div>
+
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function(){
+	$('#needspace_link').click(function() {
+		$('#needspace_form').modal({minHeight:400});
+	});
+	$('#gotspace_link').click(function() {
+		$('#gotspace_form').modal({minHeight:400});
+	});
+
+});
+</script>
