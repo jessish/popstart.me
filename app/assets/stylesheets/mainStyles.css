@@ -335,7 +335,7 @@ body {
 	text-indent: -119988px;
 	overflow: hidden;
 	text-align: left;
-	background-image: url(''http://avathemes.com/HTML5/Hexagonal/images/1-Home/DCat.png'');
+	background-image: url('DCat.png');
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	position: relative;
@@ -344,7 +344,7 @@ body {
 }
 
 .trait-emblem.photography {
-	background-image: url(http://avathemes.com/HTML5/Hexagonal/images/1-Home/PCat.png);
+	background-image: url('PCat.png');
 }
 
 .trait-box.photography dl {
@@ -356,7 +356,7 @@ body {
 }
 
 .trait-emblem.branding {
-	background-image: url(http://avathemes.com/HTML5/Hexagonal/images/1-Home/BCat.png);
+	background-image: url('BCat.png');
 }
 
 .trait-box.photography {
