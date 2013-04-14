@@ -53,7 +53,7 @@
         <!-- Title Area -->
         
         <li class="name">
-          <h1><%= link_to image_tag('logoHere.png', :size => '198x36') %>
+          <h1><a class="logo" href="index.html"><%= image_tag 'logoHere.png', :size => '198x36' %></a></h1>
         </li>
         
         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
@@ -64,15 +64,15 @@
         <section class="top-bar-section clear-fix">
         <!-- Left Nav Section -->
         
-<!--         <ul class="left">
+        <ul class="left">
           <li class="active"><a href="index.html">Home</a></li>
-          <li class="active"><a href="about.html"> </a></li>
+          <li class="active"><a href="about.html">About Us</a></li>
           <li class="active"><a href="portfolio.html">Venues</a></li>
           <li class="active"><a href="blog.html">Events</a></li>
           <li class="active"><a href="blog.html">Partners</a></li>
           <li class="active"><a href="contact.html">Contact Us</a></li>
         </ul>
-         -->
+        
         <select> 
 	      <option value="" selected="selected">Navigation</option> 
 	      
@@ -88,8 +88,8 @@
 	    </select> 
         
         <ul id="socials">
-          <li class="active"><a href="http://www.facebook.com/popstart.me" target="_blank">Facebook</a></li>
-          <li class="active"><a href="http://www.twitter.com/popstartme" target="_blank">Twitter</a></li>
+          <li class="active"><a href="http://www.facebook.com/popstart.me">Facebook</a></li>
+          <li class="active"><a href="http://www.twitter.com/popstartme">Twitter</a></li>
         </ul>
         </section>
 	</nav>
@@ -117,7 +117,7 @@
      <div class="row traits-wrapper clear-fix">
 
      	<a href="#" id="needspace_link" class="trait-box design">
-            <h4 style="color: #ebe77b; text-shadow: 1px 1px 1px #444;">I Need a Space for My Pop Up<br />
+            <h4>I Need a Space for My Pop Up<br />
 <span style="font-size: 16px; line-height: 16px;"><span id="vendorcount"></span> Registered Vendors</span>
             </h4>
           
@@ -135,7 +135,7 @@
           </a>
           
           <a href="#" id="gotspace_link" class="trait-box photography">
-            <h4 style="color: #ebe77b; text-shadow: 1px 1px 1px #444;">I Want to Rent Out My Space<br />
+            <h4>I Want to Rent Out My Space<br />
               <span style="font-size: 16px; line-height: 16px;"><span id="venuecount"></span> Registered Venues</span>
             </h4>
             <dl>
@@ -145,15 +145,13 @@
                 </span>
               </dt>
               <dd>
-                Get connected to people in the business &amp; find out new ways to make money from your space.
+                Get connect to people in the business &amp; find out new ways to make money from your space.
               </dd>
             </dl>
           </a>
           
           <a href="#" id="shop_link" class="trait-box branding">
-            <h4 style="color: #ebe77b; text-shadow: 1px 1px 1px #444;">Tell Me About Pop Up Events<br />
-              <span style="font-size: 16px; line-height: 16px;"><span id="customercount"></span> Registered Shoppers</span>
-            </h4>
+            <h4>Tell Me About Pop Up Events</h4>
             <dl>
               <dt>
                 <span class="trait-emblem large branding">
@@ -169,7 +167,7 @@
   </div>
  </div>
  
- <div class="row" id="recentProjects">
+ <div class="row" id="recentProjects" style="padding-bottom: 30px">
  	<div class="large-12 columns recTitle">
     	<h4>Featured Venues</h4>
     </div>
@@ -238,25 +236,18 @@
  <!--Quote Container Wrapper-->
  
  <div id="quoteContainer">
- 	<div id="quoteContent" class="row">
-    	<ul id="featured2" data-orbit>
-          <li data-orbit-slide="headline-1">
+ 	<div id="quoteContent" class="row" style="text-align: center;margin-top: 19px;margin-bottom: 5px;color: #424964;line-height: 24px;">
+    	<ul id="featured2">
+          <li style="list-style: none">
               <div class="quoteSection">
 
                    <p class="quoteContent">"We opened our online store and realised that we should have a physical presence to get the sales going. PopStart.Me helped us find a wicked high street venue that matched our marketing strategy. Not only were we successful during the pop-up week but this presence helped generate lot more sales to our online store."
 </p>
-                   <p class="theName">Jay</p>
-                   <p class="bussines">sPurpo</p>
+                   <p class="theName" style="font-size: 22px;font-family: Georgia, serif;color: #f07241;margin-bottom: 5px;">Jay</p>
+                   <p class="bussines" style="font-size: 14px;font-family: 'Calibri';color: #601848;text-transform: uppercase;">sPurpo</p>
                </div>
           </li>
-          
-          <li data-orbit-slide="headline-2">
-              <div class="quoteSection">
-                   <p class="quoteContent">"I run drawing classes where the theme of the class is matched with wines. I needed a space I could use twice a week in the afternoon that would have basic kitchen facilities but wouldn't be too expensive. Thanks to PopStart.Me we teamed up with Grace cafe in Fitzroy to use their space during times they would be closed anyway. I call it win-win!"</p>
-                   <p class="theName">Andrzej</p>
-                   <p class="bussines">Grey Eye Society</p>
-               </div>
-          </li>
+
 		</ul>
     </div>
  </div>
@@ -274,12 +265,12 @@
             <div class="large-8 small-12 columns">
                 <div class="row footerNav">
                     <ul id="footer-navigation" class="footerUl clear-fix">
-                        <li><%= link_to 'Home', root_path%></li>
-<!--                         <li><a href="about.html">About us</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
                         <li><a href="portfolio.html">Venues</a></li>
                         <li><a href="blog.html">Events</a></li>
                         <li><a href="typography.html">Partners</a></li>
-                        <li><a href="contact.html">Contact Us</a></li> -->
+                        <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                     
                     <ul id="footer-info" class="footerUl clear-fix">
@@ -293,8 +284,8 @@
             <div class="large-4 columns footerSocials">
             	<p>Follow us on :</p>
                 <span class="footSocials clear-fix">
-                	<a class="facebook" href="http://www.facebook.com/popstart.me" target="_blank">Facebook</a>
-                    <a class="twitter" href="http://www.twitter.com/popstartme" target="_blank">Twitter</a>
+                	<a class="facebook" href="http://www.facebook.com/popstart.me">Facebook</a>
+                    <a class="twitter" href="http://www.twitter.com/popstartme">Twitter</a>
                 </span>
             </div>
          </div>
@@ -411,7 +402,6 @@
                 if(data) {
                   $("#vendorcount").html(data.customers.toString());
                   $("#venuecount").html(data.venues.toString());
-                  $("#customercount").html(data.shoppers.toString());
                 }
 
                 refreshTimer = setInterval(function() {
