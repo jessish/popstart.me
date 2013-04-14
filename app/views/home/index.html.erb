@@ -115,7 +115,8 @@
     
      <!--Design Photography & Branding Categories-->
      <div class="row traits-wrapper clear-fix">
-     	<a href="index.html#" class="trait-box design">
+
+     	<a href="#" id="needspace_link" class="trait-box design">
             <h4>I Need a Space for My Pop Up<br />
 <span style="font-size: 16px; line-height: 16px;"><span id="vendorcount"></span> Registered Vendors</span>
             </h4>
@@ -128,13 +129,12 @@
                 </span>
               </dt>
               <dd>
-                Learn something new, change the way you see life, expand
-                your mind &amp; broaden your horizons.
+                Get everything you need to run your own popup.
               </dd>
             </dl>
           </a>
           
-          <a href="index.html#" class="trait-box photography">
+          <a href="#" id="gotspace_link" class="trait-box photography">
             <h4>I Want to Rent Out My Space<br />
               <span style="font-size: 16px; line-height: 16px;"><span id="venuecount"></span> Registered Venues</span>
             </h4>
@@ -145,13 +145,12 @@
                 </span>
               </dt>
               <dd>
-                Learn something new, change the way you see life, expand
-                your mind &amp; broaden your horizons.
+                Get connect to people in the business &amp; find out new ways to make money from your space.
               </dd>
             </dl>
           </a>
           
-          <a href="index.html#" class="trait-box branding">
+          <a href="#" id="shop_link" class="trait-box branding">
             <h4>Tell Me About Pop Up Events</h4>
             <dl>
               <dt>
@@ -160,8 +159,7 @@
                 </span>
               </dt>
               <dd>
-                Learn something new, change the way you see life, expand
-                your mind &amp; broaden your horizons.
+                Find out about the latest and greatest popup events happening in Melbourne.
               </dd>
             </dl>
           </a>
@@ -221,7 +219,18 @@
  </div>
  
 
- 
+ <div id="gotspace_form">
+  <%= render 'shared/form_gotspace' %>
+</div>
+
+<div id="needspace_form">
+  <%= render 'shared/form_needspace' %>
+</div>
+
+<div id="shopper_form">
+  <%= render 'shared/form_shopper' %>
+</div>
+
  
  <!--Quote Container Wrapper-->
  
@@ -386,33 +395,47 @@
 			}
 		});
 	</script>
- <!--counter--> 
-<script type="text/javascript">
-    function getRegistrationCount(refreshTimer) {
+  <!--counter--> 
+  <script type="text/javascript">
+      function getRegistrationCount(refreshTimer) {
 
-      clearInterval(refreshTimer);
+        clearInterval(refreshTimer);
 
-      $.ajax({
-            url: "<%= get_registration_counts_registrations_path %>",
-            data: { },
-            success: function(data) {  
-              if(data) {
-                $("#vendorcount").html(data.customers.toString());
-                $("#venuecount").html(data.venues.toString());
+        $.ajax({
+              url: "<%= get_registration_counts_registrations_path %>",
+              data: { },
+              success: function(data) {  
+                if(data) {
+                  $("#vendorcount").html(data.customers.toString());
+                  $("#venuecount").html(data.venues.toString());
+                }
+
+                refreshTimer = setInterval(function() {
+                  getRegistrationCount(refreshTimer);
+                }, 5000);      
               }
-
-              refreshTimer = setInterval(function() {
-                getRegistrationCount(refreshTimer);
-              }, 5000);      
-            }
-      });
-    }
-  $(document).ready(function() {
-    var refreshTimer;
-    getRegistrationCount(refreshTimer);
+        });
+      }
+    $(document).ready(function() {
+      var refreshTimer;
+      getRegistrationCount(refreshTimer);
+    });
+  </script>
+  <!-- popup form --> 
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function(){
+  $('#needspace_link').click(function() {
+    $('#needspace_form').modal({minHeight:400});
   });
-</script>
+  $('#gotspace_link').click(function() {
+    $('#gotspace_form').modal({minHeight:400});
+  });
+  $('#shop_link').click(function() {
+    $('#shopper_form').modal({minHeight:400});
+  });
 
+});
+</script>
   
 </body>
 </html>
