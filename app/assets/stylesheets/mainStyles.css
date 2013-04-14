@@ -187,7 +187,7 @@ body {
    text-overflow: ellipsis;
    white-space: nowrap;
  	z-index:7050;
-	
+
 	background-image: url(http://avathemes.com/HTML5/Hexagonal/images/responsive-nav-bg.png);
  }
 
@@ -427,7 +427,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: center top;
 	padding-top: 45px;
-	padding-bottom: 30px;
+	padding-bottom: 0px;
 }
 
 .recTitle {
@@ -565,7 +565,7 @@ select {
 	left: 0;
 	top: 0;
 	background-color: rgba(143,58,120,0.7);
-	
+
 	-webkit-transition: all 0.4s;
 }
 

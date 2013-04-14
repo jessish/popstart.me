@@ -4,7 +4,7 @@
 <!--[if gt IE 8]>
 <!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
-	<meta charset="utf-8" />
+  <meta charset="utf-8" />
     
     <!-- Website Title & Description -->
     <title>PopStart - Accelerated Events</title>
@@ -33,7 +33,7 @@
 </head>
 <body>
 
-	<div class="fluid_container">
+  <div class="fluid_container">
         <div class="camera_wrap camera_burgundy_skin" id="camera_wrap_1">
             <div data-thumb="images/slides/thumbs/1.jpg" data-src="images/slides/1.jpg">
             </div>
@@ -47,13 +47,13 @@
  <!-- THIS IS YOUR HEAD WITH NAVIGATION, INTRO TEXT AND SOCIALS-->
  <div id="headerWrapper" class="clear-fix">
   <div id="header" class="row">
-  	<nav class="top-bar">
+    <nav class="top-bar">
         <ul class="title-area">
         
         <!-- Title Area -->
         
         <li class="name">
-          <h1><a class="logo" href="index.html"><%= image_tag 'logoHere.png', :size => '198x36' %></a></h1>
+          <h1><%= link_to image_tag('logoHere.png', :size => '198x36') %>
         </li>
         
         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
@@ -64,35 +64,35 @@
         <section class="top-bar-section clear-fix">
         <!-- Left Nav Section -->
         
-        <ul class="left">
+<!--         <ul class="left">
           <li class="active"><a href="index.html">Home</a></li>
-          <li class="active"><a href="about.html">About Us</a></li>
+          <li class="active"><a href="about.html"> </a></li>
           <li class="active"><a href="portfolio.html">Venues</a></li>
           <li class="active"><a href="blog.html">Events</a></li>
           <li class="active"><a href="blog.html">Partners</a></li>
           <li class="active"><a href="contact.html">Contact Us</a></li>
         </ul>
-        
+         -->
         <select> 
-	      <option value="" selected="selected">Navigation</option> 
-	      
-	      <option value="index.html">Home</option> 
-	      <option value="about.html">About Us</option> 
-	      <option value="portfolio.html">Portfolio</option> 
-	      <option value="blog.html">Blog</option> 
-	      <option value="services.html">Services</option>
+        <option value="" selected="selected">Navigation</option> 
+
+        <option value="index.html">Home</option> 
+        <option value="about.html">About Us</option> 
+        <option value="portfolio.html">Portfolio</option> 
+        <option value="blog.html">Blog</option> 
+        <option value="services.html">Services</option>
           <option value="single-post.html">Single Post</option> 
           <option value="team.html">Team</option> 
           <option value="typography.html">Typography</option>
           <option value="contact.html">Contact</option> 
-	    </select> 
+      </select> 
         
         <ul id="socials">
-          <li class="active"><a href="http://www.facebook.com/popstart.me">Facebook</a></li>
-          <li class="active"><a href="http://www.twitter.com/popstartme">Twitter</a></li>
+          <li class="active"><a href="http://www.facebook.com/popstart.me" target="_blank">Facebook</a></li>
+          <li class="active"><a href="http://www.twitter.com/popstartme" target="_blank">Twitter</a></li>
         </ul>
         </section>
-	</nav>
+  </nav>
     
     
    <!-- MAIN TITLE AND INTRO PARAGRAPHS-->
@@ -108,7 +108,7 @@
     
     <div id="titleContainer" class="row clear-fix">
 
-    	<h1 class="mainTitle">PopStart</h1>
+      <h1 class="mainTitle">PopStart</h1>
         <p class="desc">Event Accelerator</p>
 
     </div>
@@ -116,8 +116,8 @@
      <!--Design Photography & Branding Categories-->
      <div class="row traits-wrapper clear-fix">
 
-     	<a href="#" id="needspace_link" class="trait-box design">
-            <h4>I Need a Space for My Pop Up<br />
+      <a href="#" id="needspace_link" class="trait-box design">
+            <h4 style="color: #ebe77b; text-shadow: 1px 1px 1px #444;">I Need a Space for My Pop Up<br />
 <span style="font-size: 16px; line-height: 16px;"><span id="vendorcount"></span> Registered Vendors</span>
             </h4>
           
@@ -135,7 +135,7 @@
           </a>
           
           <a href="#" id="gotspace_link" class="trait-box photography">
-            <h4>I Want to Rent Out My Space<br />
+            <h4 style="color: #ebe77b; text-shadow: 1px 1px 1px #444;">I Want to Rent Out My Space<br />
               <span style="font-size: 16px; line-height: 16px;"><span id="venuecount"></span> Registered Venues</span>
             </h4>
             <dl>
@@ -145,13 +145,15 @@
                 </span>
               </dt>
               <dd>
-                Get connect to people in the business &amp; find out new ways to make money from your space.
+                Get connected to people in the business &amp; find out new ways to make money from your space.
               </dd>
             </dl>
           </a>
           
           <a href="#" id="shop_link" class="trait-box branding">
-            <h4>Tell Me About Pop Up Events</h4>
+            <h4 style="color: #ebe77b; text-shadow: 1px 1px 1px #444;">Tell Me About Pop Up Events<br />
+              <span style="font-size: 16px; line-height: 16px;"><span id="customercount"></span> Registered Shoppers</span>
+            </h4>
             <dl>
               <dt>
                 <span class="trait-emblem large branding">
@@ -167,15 +169,15 @@
   </div>
  </div>
  
- <div class="row" id="recentProjects" style="padding-bottom: 30px">
- 	<div class="large-12 columns recTitle">
-    	<h4>Featured Venues</h4>
+ <div class="row" id="recentProjects">
+  <div class="large-12 columns recTitle">
+      <h4>Featured Venues</h4>
     </div>
     
     <div class="large-3 columns recPost">
-    	<span class="hoverEffect">
+      <span class="hoverEffect">
 
-        	<%= image_tag '1Shebeen.jpg' %>
+          <%= image_tag '1Shebeen.jpg' %>
               <a href="http://shebeen.com.au" rel="prettyPhoto" class="firstL">Zoom</a>
               <a href="http://shebeen.com.au">Link</a>
         </span>
@@ -185,8 +187,8 @@
     </div>
     
      <div class="large-3 columns recPost">
-    	<span class="hoverEffect">
-        	<%= image_tag '2Grace.jpg' %>
+      <span class="hoverEffect">
+          <%= image_tag '2Grace.jpg' %>
               <a href="images/1-Home/blog-img2.jpg" rel="prettyPhoto" class="firstL">Zoom</a>
               <a href="project.html">Link</a>
         </span>
@@ -196,8 +198,8 @@
     </div>
     
      <div class="large-3 columns recPost">
-    	<span class="hoverEffect">
-        	<%= image_tag '3GrevilleSt.jpg' %>
+      <span class="hoverEffect">
+          <%= image_tag '3GrevilleSt.jpg' %>
               <a href="images/1-Home/blog-img3.jpg" rel="prettyPhoto" class="firstL">Zoom</a>
               <a href="project.html">Link</a>
         </span>
@@ -207,8 +209,8 @@
     </div>
     
      <div class="large-3 columns recPost">
-    	<span class="hoverEffect">
-        	<%= image_tag '4Collingwood.jpg' %>
+      <span class="hoverEffect">
+          <%= image_tag '4Collingwood.jpg' %>
               <a href="images/1-Home/blog-img4.jpg" rel="prettyPhoto" class="firstL">Zoom</a>
               <a href="project.html">Link</a>
         </span>
@@ -236,19 +238,26 @@
  <!--Quote Container Wrapper-->
  
  <div id="quoteContainer">
- 	<div id="quoteContent" class="row" style="text-align: center;margin-top: 19px;margin-bottom: 5px;color: #424964;line-height: 24px;">
-    	<ul id="featured2">
-          <li style="list-style: none">
+  <div id="quoteContent" class="row">
+      <ul id="featured2" data-orbit>
+          <li data-orbit-slide="headline-1">
               <div class="quoteSection">
 
                    <p class="quoteContent">"We opened our online store and realised that we should have a physical presence to get the sales going. PopStart.Me helped us find a wicked high street venue that matched our marketing strategy. Not only were we successful during the pop-up week but this presence helped generate lot more sales to our online store."
 </p>
-                   <p class="theName" style="font-size: 22px;font-family: Georgia, serif;color: #f07241;margin-bottom: 5px;">Jay</p>
-                   <p class="bussines" style="font-size: 14px;font-family: 'Calibri';color: #601848;text-transform: uppercase;">sPurpo</p>
+                   <p class="theName">Jay</p>
+                   <p class="bussines">sPurpo</p>
                </div>
           </li>
-
-		</ul>
+          
+          <li data-orbit-slide="headline-2">
+              <div class="quoteSection">
+                   <p class="quoteContent">"I run drawing classes where the theme of the class is matched with wines. I needed a space I could use twice a week in the afternoon that would have basic kitchen facilities but wouldn't be too expensive. Thanks to PopStart.Me we teamed up with Grace cafe in Fitzroy to use their space during times they would be closed anyway. I call it win-win!"</p>
+                   <p class="theName">Andrzej</p>
+                   <p class="bussines">Grey Eye Society</p>
+               </div>
+          </li>
+    </ul>
     </div>
  </div>
   
@@ -265,12 +274,12 @@
             <div class="large-8 small-12 columns">
                 <div class="row footerNav">
                     <ul id="footer-navigation" class="footerUl clear-fix">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About us</a></li>
+                        <li><%= link_to 'Home', root_path%></li>
+<!--                         <li><a href="about.html">About us</a></li>
                         <li><a href="portfolio.html">Venues</a></li>
                         <li><a href="blog.html">Events</a></li>
                         <li><a href="typography.html">Partners</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li> -->
                     </ul>
                     
                     <ul id="footer-info" class="footerUl clear-fix">
@@ -282,17 +291,17 @@
             </div>
             
             <div class="large-4 columns footerSocials">
-            	<p>Follow us on :</p>
+              <p>Follow us on :</p>
                 <span class="footSocials clear-fix">
-                	<a class="facebook" href="http://www.facebook.com/popstart.me">Facebook</a>
-                    <a class="twitter" href="http://www.twitter.com/popstartme">Twitter</a>
+                  <a class="facebook" href="http://www.facebook.com/popstart.me" target="_blank">Facebook</a>
+                    <a class="twitter" href="http://www.twitter.com/popstartme" target="_blank">Twitter</a>
                 </span>
             </div>
          </div>
       </div>
       
       <div id="copyright" class="row">
-      	<p>All Rights Reserved 2013</p>
+        <p>All Rights Reserved 2013</p>
       </div>
   </div>
   
@@ -330,65 +339,65 @@
   
   <!--Call Foundation script in document-->
   <script>
-  	$(document).foundation();
+    $(document).foundation();
   </script>
     
   <!--Select Menu on Smaller Screens-->
   <script type="text/javascript">
-  	$("select").change(function() {
-	  window.location = $(this).find("option:selected").val();
-	});
+    $("select").change(function() {
+    window.location = $(this).find("option:selected").val();
+  });
   </script>
   
   <!--Arc Text Plugin-->
   <script type="text/javascript">
-  		$('#titleContainer h1').arctext({radius: 2300})
-		
-		$('.goTop').on('click', function(e) {
-			$('html, body').animate({
-				scrollTop : 0
-			},'slow');
-			
-			e.preventDefault();
-		});
-		
-		$('.trait-box').click(function(e) {
+      $('#titleContainer h1').arctext({radius: 2300})
+
+    $('.goTop').on('click', function(e) {
+      $('html, body').animate({
+        scrollTop : 0
+      },'slow');
+
+      e.preventDefault();
+    });
+
+    $('.trait-box').click(function(e) {
             e.preventDefault();
         });
   </script>
   
    <!--PrettyPhoto Plugin-->
   <script type="text/javascript" charset="utf-8">
-	  $(document).ready(function(){
-		$("a[rel^='prettyPhoto']").prettyPhoto();
-	  });
+    $(document).ready(function(){
+    $("a[rel^='prettyPhoto']").prettyPhoto();
+    });
   </script>
   
     
     <script>
-		jQuery(function(){
-			var windowsize = $(window).width();
+    jQuery(function(){
+      var windowsize = $(window).width();
 
-			$(window).resize(function() {
-			  var windowsize = $(window).width();
-			});
-			
-			if (windowsize < 485) {
-			  	jQuery('#camera_wrap_1').camera({
-					height: '290px',
-					pagination: false,
-					thumbnails: false,
-				});
-			}
-			else {
-				jQuery('#camera_wrap_1').camera({
-					height: '697px',
-					pagination: false,
-					thumbnails: false,
-				});
-			}
-		});
-	</script>
+      $(window).resize(function() {
+        var windowsize = $(window).width();
+      });
+
+      if (windowsize < 485) {
+          jQuery('#camera_wrap_1').camera({
+          height: '290px',
+          pagination: false,
+          thumbnails: false,
+        });
+      }
+      else {
+        jQuery('#camera_wrap_1').camera({
+          height: '697px',
+          pagination: false,
+          thumbnails: false,
+        });
+      }
+    });
+  </script>
   <!--counter--> 
   <script type="text/javascript">
       function getRegistrationCount(refreshTimer) {
@@ -402,6 +411,7 @@
                 if(data) {
                   $("#vendorcount").html(data.customers.toString());
                   $("#venuecount").html(data.venues.toString());
+                  $("#customercount").html(data.shoppers.toString());
                 }
 
                 refreshTimer = setInterval(function() {
