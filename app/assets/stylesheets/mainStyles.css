@@ -1978,7 +1978,7 @@ select {
 
 .servContainer h3,.servContainer p {
 	margin: 0;
-	padding: 0,;
+	padding: 0;
 }
 
 .servContainer h3 {
@@ -2298,7 +2298,6 @@ select {
 #latestComments h4 {
 	font-family: 'bebas_neueregular';
 	font-size: 20px;
-	font-family: ;
 	color: #424964;
 	margin-bottom: 2px;
 	font-weight: normal;
@@ -2711,7 +2710,7 @@ select {
 
 .title-area {
 	margin-right: 0;
-	text-align: center,;
+	text-align: center;
 }
 
 .logo {
