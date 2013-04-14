@@ -10,3 +10,9 @@
  *
  *= require_self
  */
+.mainTitle {
+ 	color: #009dff;
+ 	text-shadow: 1px 1px 1px #444;
+	filter: dropshadow(color=#444, offx=1, offy=1);
+
+ }
