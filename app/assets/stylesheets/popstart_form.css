@@ -1,7 +1,3 @@
-#gotspace_form {
-	display: none;
-}
-
-#needspace_form {
+#gotspace_form, #needspace_form, #shopper_form {
 	display: none;
 }

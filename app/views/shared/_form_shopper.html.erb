@@ -1,0 +1,60 @@
+<%= form_for(@registration) do |f| %>
+  <div>
+    <h3>Registered Interest</h3>
+  </div>
+ 
+  <div>
+    <% if @registration.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@registration.errors.count, "error") %> prohibited this registration from being saved:</h2>
+        <ul>
+          <% @registration.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div>
+        <%= f.text_field :name, :placeholder => "Your name", :autocomplete => 'off' %>
+    </div>
+
+    <br/>
+
+    <div>
+      <%= f.text_field :email, :placeholder => "Email" %>
+    </div>
+
+    <br />
+
+    <div>
+      <%= f.text_field :phone, :placeholder => 'Phone' %>
+    </div>
+
+    <div>
+      <%= f.hidden_field :vendortype, :value=> 'shopper' %>
+    </div>
+    <br/>
+    <div>
+      <%= f.text_field :location, :placeholder => 'City' %>
+    </div>
+
+    <br/>
+
+    <div>
+      <%= f.text_area :comment, :placeholder => "Describe the events you're interested in going to", :rows => 4 %>
+    </div>
+
+    <div>
+    </div>
+  </div>
+  <div>
+    <%= f.submit 'Submit', :class=> "button" %>
+  </div>
+<% end %>
+
+
+
+
+
+
