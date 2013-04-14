@@ -423,7 +423,7 @@ body {
 /*RECENT POSTS STYLING*/
 #recentProjects {
 	margin-top: 155px;
-	background-image: url(http://avathemes.com/HTML5/Hexagonal/images/1-Home/curved-line.png);
+	background-image: url('curved-line.png');
 	background-repeat: no-repeat;
 	background-position: center top;
 	padding-top: 45px;
