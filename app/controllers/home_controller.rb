@@ -10,4 +10,6 @@ class HomeController < ApplicationController
 
 
   end
+  def test
+  end
 end
