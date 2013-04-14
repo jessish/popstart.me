@@ -75,6 +75,7 @@ SampleApp::Application.configure do
   }
 
   config.assets.precompile += ["bootstrap.min.css","bootstrap-responsive.min.css","glyphicons-halflings.png","glyphicons-halflings-white.png","bootstrap.min.js"]
+  config.assets.precompile += ["camera.css","foundation.css","mainStyles.css","normalize.css","prettyPhoto.css","camera.js","filterable.pack.js","foundation.orbit.js","foundation.min.js","jquery.arctext.js","jquery.easing.1.3.js","jquery.mobile.customized.min.js","jquery.prettyPhoto.js","jquery.tweet.js", "novakScript.js"]
 
 
 end
