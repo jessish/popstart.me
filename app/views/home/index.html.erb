@@ -1,2 +1,424 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]>
+<!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+    
+    <!-- Website Title & Description -->
+    <title>PopStart - Accelerated Events</title>
+    <meta name="description" content="Hexagonal - Clean Multipurpose Responsive Website">
+    
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.ico" />
+    
+    <!-- This script prevents links from opening in Mobile Safari. https://gist.github.com/1042026 -->
+    <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
+    
+
+    
+    <!-- Google Web Fonts -->
+    
+	<!-- Included JS Files -->
+    <script type="text/javascript" src="javascripts/vendor/custom.modernizr.js"></script>
+    
+</head>
+<body>
+
+	<div class="fluid_container">
+        <div class="camera_wrap camera_burgundy_skin" id="camera_wrap_1">
+            <div data-thumb="images/slides/thumbs/1.jpg" data-src="images/slides/1.jpg">
+            </div>
+            <div data-thumb="images/slides/thumbs/2.jpg" data-src="images/slides/2.jpg">
+            </div>
+            <div data-thumb="images/slides/thumbs/3.jpg" data-src="images/slides/3.jpg">
+            </div>
+        </div>
+    </div><!-- .fluid_container -->
+  
+ <!-- THIS IS YOUR HEAD WITH NAVIGATION, INTRO TEXT AND SOCIALS-->
+ <div id="headerWrapper" class="clear-fix">
+  <div id="header" class="row">
+  	<nav class="top-bar">
+        <ul class="title-area">
+        
+        <!-- Title Area -->
+        
+        <li class="name">
+          <h1><a class="logo" href="index.html"><%= image_tag 'logoHere.png', :size => '198x36' %></a></h1>
+        </li>
+        
+        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        
+        <li class="toggle-topbar menu-icon"><a href="index.html#"><span>Menu</span></a></li>
+        </ul>
+    
+        <section class="top-bar-section clear-fix">
+        <!-- Left Nav Section -->
+        
+        <ul class="left">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li class="active"><a href="about.html">About Us</a></li>
+          <li class="active"><a href="portfolio.html">Venues</a></li>
+          <li class="active"><a href="blog.html">Events</a></li>
+          <li class="active"><a href="blog.html">Partners</a></li>
+          <li class="active"><a href="contact.html">Contact Us</a></li>
+        </ul>
+        
+        <select> 
+	      <option value="" selected="selected">Navigation</option> 
+	      
+	      <option value="index.html">Home</option> 
+	      <option value="about.html">About Us</option> 
+	      <option value="portfolio.html">Portfolio</option> 
+	      <option value="blog.html">Blog</option> 
+	      <option value="services.html">Services</option>
+          <option value="single-post.html">Single Post</option> 
+          <option value="team.html">Team</option> 
+          <option value="typography.html">Typography</option>
+          <option value="contact.html">Contact</option> 
+	    </select> 
+        
+        <ul id="socials">
+          <li class="active"><a href="http://www.facebook.com/popstart.me">Facebook</a></li>
+          <li class="active"><a href="http://www.twitter.com/popstartme">Twitter</a></li>
+        </ul>
+        </section>
+	</nav>
+    
+    
+   <!-- MAIN TITLE AND INTRO PARAGRAPHS-->
+   
+    <div class="row clear-fix">
+      <!--
+        <div class="large-3 large-centered columns text1">
+            <p>Habitasse vut ut, nisi eu</p>
+            <p>Urna proin placerat</p>
+        </div>
+      -->
+    </div>
+    
+    <div id="titleContainer" class="row clear-fix">
+
+    	<h1 class="mainTitle">PopStart</h1>
+        <p class="desc">Event Accelerator</p>
+
+    </div>
+    
+     <!--Design Photography & Branding Categories-->
+     <div class="row traits-wrapper clear-fix">
+     	<a href="index.html#" class="trait-box design">
+            <h4>Shoppers</h4>
+            <figure>
+              <img src="images/1-Home/blog-img1.jpg" alt="" width="326" height="184" />
+            </figure>
+            <dl>
+              <dt>
+                <span class="trait-emblem large design">
+                  <span>Shoppers</span>
+                </span>
+              </dt>
+              <dd>
+                Learn something new, change the way you see life, expand
+                your mind &amp; broaden your horizons.
+              </dd>
+            </dl>
+          </a>
+          
+          <a href="index.html#" class="trait-box photography">
+            <h4>Venues</h4>
+            <figure>
+              <img src="images/1-Home/blog-img2.jpg" alt="" width="326" height="184" />
+            </figure>
+            <dl>
+              <dt>
+                <span class="trait-emblem large photography">
+                  <span>Venues</span>
+                </span>
+              </dt>
+              <dd>
+                Learn something new, change the way you see life, expand
+                your mind &amp; broaden your horizons.
+              </dd>
+            </dl>
+          </a>
+          
+          <a href="index.html#" class="trait-box branding">
+            <h4>Service Providers</h4>
+            <figure>
+              <img src="images/1-Home/blog-img3.jpg" alt="" width="326" height="184" />
+            </figure>
+            <dl>
+              <dt>
+                <span class="trait-emblem large branding">
+                  <span>Service Providers</span>
+                </span>
+              </dt>
+              <dd>
+                Learn something new, change the way you see life, expand
+                your mind &amp; broaden your horizons.
+              </dd>
+            </dl>
+          </a>
+     </div>
+  </div>
+ </div>
+ 
+ <div class="row" id="recentProjects">
+ 	<div class="large-12 columns recTitle">
+    	<h4>Featured Venues</h4>
+    </div>
+    
+    <div class="large-3 columns recPost">
+    	<span class="hoverEffect">
+
+        	<%= image_tag '1Shebeen.jpg' %>
+              <a href="http://shebeen.com.au" rel="prettyPhoto" class="firstL">Zoom</a>
+              <a href="http://shebeen.com.au">Link</a>
+        </span>
+
+        <h4><a href="project.html">Shebeen</a></h4>
+        <p class="postContent">Shebeen is a non-profit bar. Exotic beers and wines from the developing world are sold at Shebeen. Profits from each drink sale support a development project in that drink's country of origin.</p>
+    </div>
+    
+     <div class="large-3 columns recPost">
+    	<span class="hoverEffect">
+        	<%= image_tag '2Grace.jpg' %>
+              <a href="images/1-Home/blog-img2.jpg" rel="prettyPhoto" class="firstL">Zoom</a>
+              <a href="project.html">Link</a>
+        </span>
+        <h4><a href="project.html">Grace Cafe</a></h4>
+        <p class="postContent">Hidden among the graffiti-covered surrounds of Rose Street, Grace, offers plenty of kind food and even kinder surroundings for those who spend time within its walls.
+</p>
+    </div>
+    
+     <div class="large-3 columns recPost">
+    	<span class="hoverEffect">
+        	<%= image_tag '3GrevilleSt.jpg' %>
+              <a href="images/1-Home/blog-img3.jpg" rel="prettyPhoto" class="firstL">Zoom</a>
+              <a href="project.html">Link</a>
+        </span>
+        <h4><a href="project.html">Greville Street</a></h4>
+        <p class="postContent">Exclusive retail space at a popular fashion strip of Greville Street in Prahran. Two levels, rent one or both. 
+</p>
+    </div>
+    
+     <div class="large-3 columns recPost">
+    	<span class="hoverEffect">
+        	<%= image_tag '4Collingwood.jpg' %>
+              <a href="images/1-Home/blog-img4.jpg" rel="prettyPhoto" class="firstL">Zoom</a>
+              <a href="project.html">Link</a>
+        </span>
+        <h4><a href="project.html">Collingwood Warehouse</a></h4>
+        <p class="postContent">We offer a huge sunny warehouse space for exhibitions, launches, theatre and fashion shows. Rent for a day, a week or a month.
+</p>
+    </div>
+ </div>
+ 
+
+ 
+ 
+ <!--Quote Container Wrapper-->
+ 
+ <div id="quoteContainer">
+ 	<div id="quoteContent" class="row">
+    	<ul id="featured2" data-orbit>
+          <li data-orbit-slide="headline-1">
+              <div class="quoteSection">
+
+                   <p class="quoteContent">"We opened our online store and realised that we should have a physical presence to get the sales going. PopStart.Me helped us find a wicked high street venue that matched our marketing strategy. Not only were we successful during the pop-up week but this presence helped generate lot more sales to our online store."
+</p>
+                   <p class="theName">Jay</p>
+                   <p class="bussines">sPurpo</p>
+               </div>
+          </li>
+          
+          <li data-orbit-slide="headline-2">
+              <div class="quoteSection">
+                   <p class="quoteContent">"I run drawing classes where the theme of the class is matched with wines. I needed a space I could use twice a week in the afternoon that would have basic kitchen facilities but wouldn't be too expensive. Thanks to PopStart.Me we teamed up with Grace cafe in Fitzroy to use their space during times they would be closed anyway. I call it win-win!"</p>
+                   <p class="theName">Andrzej</p>
+                   <p class="bussines">Grey Eye Society</p>
+               </div>
+          </li>
+		</ul>
+    </div>
+ </div>
+  
+  
+
+  
+  
+  <!--FOOTER SECTION-->
+  
+  <div id="footerWrapp">
+  <a href="index.html#" class="goTop">Go Top</a>
+      <div id="topFooter">
+        <div id="footer" class="row">
+            <div class="large-8 small-12 columns">
+                <div class="row footerNav">
+                    <ul id="footer-navigation" class="footerUl clear-fix">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="typography.html">Features</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                    
+                    <ul id="footer-info" class="footerUl clear-fix">
+                        <li>Some Street. City, 0000.</li>
+                        <li>(328) 357-5478</li>
+                        <li>email@email.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="large-4 columns footerSocials">
+            	<p>Follow us on :</p>
+                <span class="footSocials clear-fix">
+                	<a class="facebook" href="index.html#">Facebook</a>
+                    <a class="twitter" href="index.html#">Twitter</a>
+                    <a class="skype" href="index.html#">Skype</a>
+                    <a class="vimeo" href="index.html#">Vimeo</a>
+                </span>
+            </div>
+         </div>
+      </div>
+      
+      <div id="copyright" class="row">
+      	<p>All Rights Reserved 2013</p>
+      </div>
+  </div>
+  
+  
+  
+  
+  
+  <!--Zepto and jQuery Script-->
+  <script>
+	  document.write('<script src=' + ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') + '.js><\/script>')
+  </script>
+  
+  <!--Minified Foundation Javascript file-->
+  <script src="javascripts/foundation.min.js"></script>
+  
+  <!--
+  
+  <script src="javascripts/foundation/foundation.js"></script>
+  
+  <script src="javascripts/foundation/foundation.dropdown.js"></script>
+  
+  <script src="javascripts/foundation/foundation.alerts.js"></script>
+  
+  <script src="javascripts/foundation/foundation.clearing.js"></script>
+  
+  <script src="javascripts/foundation/foundation.placeholder.js"></script>
+  
+  <script src="javascripts/foundation/foundation.forms.js"></script>
+  
+  <script src="javascripts/foundation/foundation.cookie.js"></script>
+  
+  <script src="javascripts/foundation/foundation.joyride.js"></script>
+  
+  <script src="javascripts/foundation/foundation.magellan.js"></script>
+  
+  <script src="javascripts/foundation/foundation.reveal.js"></script>
+  
+  <script src="javascripts/foundation/foundation.section.js"></script>
+  
+  <script src="javascripts/foundation/foundation.tooltips.js"></script>
+  
+  <script src="javascripts/foundation/foundation.topbar.js"></script>
+  
+  -->
+  
+  <!--Call Foundation script in document-->
+  <script>
+  	$(document).foundation();
+  </script>
+  
+  <!--ORBIT SLIDER SCRIPT-->
+  <script src="javascripts/foundation/foundation.orbit.js"></script>
+  
+  <!--Select Menu on Smaller Screens-->
+  <script type="text/javascript">
+  	$("select").change(function() {
+	  window.location = $(this).find("option:selected").val();
+	});
+  </script>
+  
+  <!--Arc Text Plugin-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.arctext.js"></script>
+  <script type="text/javascript">
+  		$('#titleContainer h1').arctext({radius: 2300})
+		
+		$('.goTop').on('click', function(e) {
+			$('html, body').animate({
+				scrollTop : 0
+			},'slow');
+			
+			e.preventDefault();
+		});
+		
+		$('.trait-box').click(function(e) {
+            e.preventDefault();
+        });
+  </script>
+  
+   <!--PrettyPhoto Plugin-->
+  <script type="text/javascript" src="javascripts/jquery.prettyPhoto.js"></script>
+  <script type="text/javascript" charset="utf-8">
+	  $(document).ready(function(){
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	  });
+  </script>
+  
+  <!--MediaNovak Script-->
+  <script type="text/javascript" src="javascripts/novakScript.js"></script>
+  
+  <script type='text/javascript' src='javascripts/jquery.min.js'></script>
+    <script type='text/javascript' src='javascripts/jquery.mobile.customized.min.js'></script>
+    <script type='text/javascript' src='javascripts/jquery.easing.1.3.js'></script> 
+    <script type='text/javascript' src='javascripts/camera.js'></script> 
+    
+    <script>
+		jQuery(function(){
+			var windowsize = $(window).width();
+
+			$(window).resize(function() {
+			  var windowsize = $(window).width();
+			});
+			
+			if (windowsize < 485) {
+			  	jQuery('#camera_wrap_1').camera({
+					height: '290px',
+					pagination: false,
+					thumbnails: false,
+				});
+			}
+			else {
+				jQuery('#camera_wrap_1').camera({
+					height: '697px',
+					pagination: false,
+					thumbnails: false,
+				});
+			}
+		});
+	</script>
+  
+  
+</body>
+</html>

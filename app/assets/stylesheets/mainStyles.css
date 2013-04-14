@@ -335,7 +335,7 @@ body {
 	text-indent: -119988px;
 	overflow: hidden;
 	text-align: left;
-	background-image: url(http://avathemes.com/HTML5/Hexagonal/images/1-Home/DCat.png);
+	background-image: url(''http://avathemes.com/HTML5/Hexagonal/images/1-Home/DCat.png'');
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	position: relative;
@@ -488,7 +488,7 @@ body {
 .hoverEffect {
 	display: block;
 	position: relative;
-	background-image: url(http://avathemes.com/HTML5/Hexagonal/images/1-Home/hoverbg.png);
+	/*background-image: url(http://avathemes.com/HTML5/Hexagonal/images/1-Home/hoverbg.png);*/
 	background-repeat: no-repeat;
 
 	-webkit-background-size: auto;
