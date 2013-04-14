@@ -85,8 +85,9 @@ class RegistrationsController < ApplicationController
   def get_registration_counts
     no_venues = Registration.where("vendortype = ?","venue").count
     no_customers = Registration.where("vendortype = ?","customer").count
+    no_shoppers = Registration.where("vendortype = ?","shopper").count
 
-    json_data = {'customers' => no_customers.to_s, 'venues' => no_venues.to_s }.to_json
+    json_data = {'customers' => no_customers.to_s, 'venues' => no_venues.to_s, 'shoppers' => no_shoppers.to_s }.to_json
     render :json => json_data
   end
 
